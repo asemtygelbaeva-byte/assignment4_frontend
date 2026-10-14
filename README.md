@@ -4,7 +4,7 @@
 **Group:** SE-2540  
 **Course:** Web Technologies I (Front End)
 
-**Repository:** [asemtygelbaeva-byte/assignment4_frontend](https://github.com/asemtygelbaeva-byte/assignment4_frontend)
+**Website:** [Open the Student Club website](https://asemtygelbaeva-byte.github.io/assignment4_frontend/)
 
 A student club website with contact and registration forms. Built with HTML, CSS and Bootstrap 5.3.8. 
 
@@ -12,7 +12,7 @@ The design uses a warm background, dark green buttons, serif headings and rounde
 
 ## Run the project
 
-Download the repository and open `index.html` in a browser. All five tasks are on this page; the links at the top jump to each task. CSS is included inside the HTML file. An internet connection is required for the Bootstrap stylesheet.
+Open the website using the link above, or download `index.html` and open it in a browser. All five tasks are on this page; the links at the top jump to each task. CSS is included inside the HTML file. Colours, fonts, sizes and spacing are controlled by CSS variables in `:root`. An internet connection is required for the Bootstrap stylesheet.
 
 ## Part 1 — Basic HTML Forms
 
