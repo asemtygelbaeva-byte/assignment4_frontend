@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student club registration | Assignment 4</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="page container">
+  <header>
+    <p class="eyebrow">ASSIGNMENT 4 / PART 3</p>
+    <h1>Join the student club</h1>
+    <p>Meet other students and share your interests.</p>
+    <nav aria-label="Assignment pages">
+      <a href="basic.html">1. HTML forms</a>
+      <a href="bootstrap.html">2. Bootstrap forms</a>
+      <a href="index.html" aria-current="page">3. Registration</a>
+    </nav>
+  </header>
+  <section id="task-4">
+    <h2>Task 4. Registration form</h2>
+    <p>All fields except hobbies are required. This is a practice form; use sample details.</p>
+    <!-- HTML validates the fields; Bootstrap CSS displays the feedback. -->
+    <form class="row g-3 was-validated" action="complete.html" method="get">
+      <div class="col-md-6">
+        <label for="first-name" class="form-label">First name</label>
+        <input id="first-name" name="firstName" class="form-control" type="text" placeholder="First name" minlength="2" maxlength="30" aria-describedby="first-name-error" required>
+        <div id="first-name-error" class="invalid-feedback">Enter 2–30 characters.</div>
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="col-md-6">
+        <label for="last-name" class="form-label">Last name</label>
+        <input id="last-name" name="lastName" class="form-control" type="text" placeholder="Last name" minlength="2" maxlength="30" aria-describedby="last-name-error" required>
+        <div id="last-name-error" class="invalid-feedback">Enter 2–30 characters.</div>
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="col-12">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" class="form-control" type="email" placeholder="name@example.com" aria-describedby="email-error" required>
+        <div id="email-error" class="invalid-feedback">Enter a valid email address.</div>
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <!-- Passwords have no name, so this GET demo never includes them in the URL. -->
+      <div class="col-md-6">
+        <label for="password" class="form-label">Password</label>
+        <input id="password" class="form-control" type="password" autocomplete="new-password" minlength="8" maxlength="30" aria-describedby="password-error" required>
+        <div id="password-error" class="invalid-feedback">Use 8–30 characters.</div>
+        <div class="valid-feedback">Length is valid.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="confirm-password" class="form-label">Confirm password</label>
+        <input id="confirm-password" class="form-control" type="password" autocomplete="new-password" minlength="8" maxlength="30" aria-describedby="confirm-help confirm-error" required>
+        <div id="confirm-help" class="form-text">Enter the same password again.</div>
+        <div id="confirm-error" class="invalid-feedback">Use 8–30 characters.</div>
+        <div class="valid-feedback">Length is valid.</div>
+      </div>
+      <fieldset class="col-md-6">
+        <legend>Gender</legend>
+        <div class="form-check">
+          <input id="female" class="form-check-input" type="radio" name="gender" value="female" required>
+          <label class="form-check-label" for="female">Female</label>
+        </div>
+        <div class="form-check">
+          <input id="male" class="form-check-input" type="radio" name="gender" value="male" required>
+          <label class="form-check-label" for="male">Male</label>
+        </div>
+        <div class="form-check">
+          <input id="unspecified" class="form-check-input" type="radio" name="gender" value="unspecified" aria-describedby="gender-error" required>
+          <label class="form-check-label" for="unspecified">Prefer not to say</label>
+          <div id="gender-error" class="invalid-feedback">Choose one option.</div>
+        </div>
+      </fieldset>
+      <fieldset class="col-md-6">
+        <legend>Hobbies <span class="fw-normal">(optional)</span></legend>
+        <div class="form-check">
+          <input id="reading" class="form-check-input" type="checkbox" name="hobby" value="reading">
+          <label class="form-check-label" for="reading">Reading</label>
+        </div>
+        <div class="form-check">
+          <input id="sport" class="form-check-input" type="checkbox" name="hobby" value="sport">
+          <label class="form-check-label" for="sport">Sport</label>
+        </div>
+        <div class="form-check">
+          <input id="music" class="form-check-input" type="checkbox" name="hobby" value="music">
+          <label class="form-check-label" for="music">Music</label>
+        </div>
+      </fieldset>
+      <div class="col-12">
+        <label for="country" class="form-label">Country</label>
+        <select id="country" name="country" class="form-select" aria-describedby="country-error" required>
+          <option value="">Choose your country</option>
+          <option value="Kazakhstan">Kazakhstan</option>
+          <option value="Kyrgyzstan">Kyrgyzstan</option>
+          <option value="Uzbekistan">Uzbekistan</option>
+          <option value="Other">Other</option>
+        </select>
+        <div id="country-error" class="invalid-feedback">Select a country.</div>
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="col-12 d-flex gap-2">
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <button class="btn btn-outline-secondary" type="reset">Reset</button>
+      </div>
+    </form>
+  </section>
+  <footer>Assem Tugelbay · SE-2540 · Forms and Validation</footer>
+</main>
+</body>
+</html>
