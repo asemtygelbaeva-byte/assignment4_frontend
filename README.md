@@ -8,6 +8,8 @@
 
 A student club website with contact and registration forms. Built with HTML, CSS and Bootstrap 5.3.8. 
 
+The design uses a warm background, dark green buttons, serif headings and rounded form cards. The first two forms use a two-column CSS Grid on desktop and stack on mobile.
+
 ## Run the project
 
 Download the repository and open `index.html` in a browser. All five tasks are on this page; the links at the top jump to each task. CSS is included inside the HTML file. An internet connection is required for the Bootstrap stylesheet.
@@ -18,13 +20,13 @@ Download the repository and open `index.html` in a browser. All five tasks are o
 
 The first form in `index.html` has Name, Email, Message and Submit. Each input has a matching label.
 
-![Task 0 — basic contact form](https://github.com/user-attachments/assets/f2490942-2517-49e7-a766-52e05d582813)
+![Task 0 — basic contact form](https://github.com/user-attachments/assets/5ac29ddd-0a1d-4487-9cba-b0421a052724)
 
 ### Task 1 — Form with HTML5 Validation
 
 The second form adds `required`, `minlength` and `maxlength`. Name accepts 2–30 characters, Message accepts 10–500, and `type="email"` checks the email format. Empty fields and incorrect email addresses prevent submission.
 
-![Task 1 — invalid email and browser feedback](https://github.com/user-attachments/assets/6a9c9c35-e23b-46a3-aa18-5b4e35f4d9ca)
+![Task 1 — invalid email and browser feedback](https://github.com/user-attachments/assets/fdee7021-4ed4-464e-bf79-8d86b965e4f2)
 
 ## Part 2 — Bootstrap Forms
 
@@ -32,7 +34,7 @@ The second form adds `required`, `minlength` and `maxlength`. Name accepts 2–3
 
 The Bootstrap contact form uses `form-label`, `form-control`, `form-text` and `btn`. The `row g-3` grid provides spacing. Name and Email use `col-md-6` to appear side by side on larger screens and stack on mobile. The fields include placeholders and an email hint.
 
-![Task 2 — valid Bootstrap contact form](https://github.com/user-attachments/assets/78fe1aac-1f09-4cf7-b485-c951f7642089)
+![Task 2 — valid Bootstrap contact form](https://github.com/user-attachments/assets/26665f9f-4fe1-44e5-80dd-c0c31927339a)
 
 ### Task 3 — Bootstrap Validation Styles
 
@@ -40,7 +42,7 @@ The contact form uses `was-validated`, `valid-feedback` and `invalid-feedback`. 
 
 The two read-only fields below the form demonstrate `is-valid` and `is-invalid`. These examples have fixed styles; the contact form above is used to test changing input values.
 
-![Task 3 — is-valid and is-invalid examples](https://github.com/user-attachments/assets/e0478967-49a9-470b-a86d-8e66d3f32d30)
+![Task 3 — is-valid and is-invalid examples](https://github.com/user-attachments/assets/35f4bcca-5444-4518-9ebf-312d587d523b)
 
 ## Part 3 — Advanced Form Project
 
@@ -50,11 +52,11 @@ The two read-only fields below the form demonstrate `is-valid` and `is-invalid`.
 
 Names require 2–30 characters and passwords require 8–30. Email, gender and country are required; hobbies are optional. Bootstrap Grid adjusts the layout to the screen width. Feedback appears below the inputs.
 
-![Task 4 — required fields and blocked submission](https://github.com/user-attachments/assets/e803ea39-496e-49cd-80ec-b288ef499253)
+![Task 4 — required fields and blocked submission](https://github.com/user-attachments/assets/bca695de-0fbf-4db0-a194-26c52dc8bd4c)
 
-![Task 4 — valid registration fields](https://github.com/user-attachments/assets/20cdfefc-570c-4f22-b37d-03f55b00df03)
+![Task 4 — valid registration fields](https://github.com/user-attachments/assets/7c139d88-6a56-40c0-b3d4-584da373690b)
 
-![Task 4 — mobile layout at 375px](https://github.com/user-attachments/assets/76515437-2b26-4209-8d16-9093490dcb6c)
+![Task 4 — mobile layout at 375px](https://github.com/user-attachments/assets/d27c3e16-96c3-4603-9960-cd64b852902d)
 
 ## Notes
 
@@ -77,7 +79,7 @@ Names require 2–30 characters and passwords require 8–30. Email, gender and 
 
 ## Work process summary
 
-All tasks are collected in one HTML file with internal CSS. The contact form was built first, then HTML validation was added. Next came the Bootstrap layout, feedback messages and registration form. Empty fields, incorrect and valid input, Reset, and mobile layouts were checked in a browser. Screenshots show the results for each task.
+All tasks are collected in one HTML file with internal CSS. The contact form was built first, then HTML validation was added. Next came the Bootstrap layout, feedback messages and registration form. Colours, fonts, spacing and responsive cards were styled with CSS. Empty fields, incorrect and valid input, Reset, and mobile layouts were checked in a browser. Screenshots show the results for each task.
 
 ## Resources
 
