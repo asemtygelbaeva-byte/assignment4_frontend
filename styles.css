@@ -1,4 +1,3 @@
-/* Shared page layout: basic CSS and Flexbox. */
 * { box-sizing: border-box; }
 body { margin: 0; background: #f3f5f8; color: #253047; font: 16px/1.5 Arial, sans-serif; }
 .page { max-width: 900px; margin: auto; padding: 28px 20px; }
@@ -11,7 +10,6 @@ nav a { padding: 8px 14px; border: 1px solid #ccd4e0; border-radius: 6px; color:
 nav a[aria-current="page"] { background: #253047; color: white; }
 section { padding: 24px; margin-bottom: 24px; border: 1px solid #dce1e9; border-radius: 10px; background: white; }
 footer { margin-top: 24px; color: #53627a; font-size: 14px; }
-/* The basic HTML page does not load Bootstrap. */
 .basic label { display: block; margin-bottom: 5px; font-weight: bold; }
 .basic input, .basic textarea { width: 100%; padding: 9px; border: 1px solid #909db2; border-radius: 4px; font: inherit; }
 .basic p { margin: 0 0 16px; }

@@ -22,7 +22,6 @@
   <section id="task-4">
     <h2>Task 4. Registration form</h2>
     <p>All fields except hobbies are required. This is a practice form; use sample details.</p>
-    <!-- HTML validates the fields; Bootstrap CSS displays the feedback. -->
     <form class="row g-3 was-validated" action="complete.html" method="get">
       <div class="col-md-6">
         <label for="first-name" class="form-label">First name</label>
@@ -42,7 +41,6 @@
         <div id="email-error" class="invalid-feedback">Enter a valid email address.</div>
         <div class="valid-feedback">Looks good!</div>
       </div>
-      <!-- Passwords have no name, so this GET demo never includes them in the URL. -->
       <div class="col-md-6">
         <label for="password" class="form-label">Password</label>
         <input id="password" class="form-control" type="password" autocomplete="new-password" minlength="8" maxlength="30" aria-describedby="password-error" required>
