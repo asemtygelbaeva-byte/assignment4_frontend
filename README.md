@@ -6,7 +6,7 @@
 
 **Repository:** [asemtygelbaeva-byte/assignment4_frontend](https://github.com/asemtygelbaeva-byte/assignment4_frontend)
 
-A student club website with contact and registration forms. Built with HTML, CSS and Bootstrap 5.3.8. No JavaScript is used.
+A student club website with contact and registration forms. Built with HTML, CSS and Bootstrap 5.3.8. 
 
 ## Run the project
 
