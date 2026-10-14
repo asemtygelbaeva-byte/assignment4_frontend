@@ -7,39 +7,70 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <style>
     * { box-sizing: border-box; }
-    body { margin: 0; background: #f3f5f8; color: #253047; font: 16px/1.5 Arial, sans-serif; }
-    .page { max-width: 900px; margin: auto; padding: 28px 20px; }
-    header { margin-bottom: 24px; }
-    h1 { font-size: 30px; margin: 8px 0; }
-    h2 { font-size: 22px; margin: 0 0 18px; }
-    nav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
-    nav a { padding: 8px 14px; border: 1px solid #ccd4e0; border-radius: 6px; color: #253047; text-decoration: none; }
-    section { padding: 24px; margin-bottom: 24px; border: 1px solid #dce1e9; border-radius: 10px; background: white; }
-    footer { margin-top: 24px; color: #53627a; font-size: 14px; }
-    .basic label { display: block; margin-bottom: 5px; font-weight: bold; }
-    .basic input, .basic textarea { width: 100%; padding: 9px; border: 1px solid #909db2; border-radius: 4px; font: inherit; }
-    .basic p { margin: 0 0 16px; }
-    .basic button { background: #0d6efd; color: white; border: 0; border-radius: 5px; padding: 10px 20px; font: inherit; cursor: pointer; }
+    body { margin: 0; background: #f5f4ee; color: #243e36; font: 15px/1.6 Arial, sans-serif; }
+    .page { max-width: 1080px; margin: auto; padding: 30px 24px; }
+    .brand, .intro, footer { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+    .brand { padding-bottom: 22px; border-bottom: 1px solid #d8ded3; }
+    .brand strong { font: bold 24px Georgia, serif; }
+    .badge-label { padding: 6px 12px; border-radius: 20px; background: #e3ebd2; font-size: 11px; font-weight: bold; letter-spacing: 1px; }
+    .intro { padding: 46px 0 32px; align-items: end; }
+    h1 { font: 60px/1.08 Georgia, serif; letter-spacing: -2px; margin: 0; }
+    h1 em { color: #5c7752; }
+    .intro p { max-width: 260px; margin: 0 0 6px; color: #647268; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 30px; }
+    nav a { padding: 9px 16px; border: 1px solid #cbd5c5; border-radius: 24px; color: #243e36; text-decoration: none; font-size: 13px; }
+    nav a:hover, nav a:focus-visible { background: #243e36; color: white; }
+    .basic-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    section { padding: 30px; margin-bottom: 24px; border: 1px solid #dce2d7; border-radius: 18px; background: white; box-shadow: 0 6px 20px #243e3606; }
+    .section-label { margin: 0 0 10px; color: #627455; font-size: 11px; font-weight: bold; letter-spacing: 1.5px; }
+    h2 { font: 30px/1.2 Georgia, serif; margin: 0 0 12px; }
+    .note { color: #667268; font-size: 13px; margin-bottom: 24px; }
+    #task-3 { background: #edf2e5; }
+    .basic label, .form-label { display: block; margin-bottom: 7px; font-size: 13px; font-weight: bold; }
+    .basic input, .basic textarea { width: 100%; padding: 10px 12px; border: 1px solid #cbd5c8; border-radius: 9px; background: #fafbf8; font: inherit; }
+    .basic input:focus, .basic textarea:focus { outline: 2px solid #6f8b61; outline-offset: 2px; }
+    .basic p { margin-bottom: 18px; }
+    .form-control, .form-select { min-height: 45px; border-radius: 9px; background-color: #fafbf8; font-size: 14px; }
+    .btn, .basic button { padding: 10px 22px; border-radius: 9px; font-size: 13px; font-weight: bold; }
+    .btn-primary, .basic button { border: 1px solid #243e36; background: #243e36; color: white; cursor: pointer; }
+    .btn-primary:hover, .btn-primary:focus, .basic button:hover { border-color: #3d604a; background: #3d604a; color: white; }
+    .btn-outline-secondary { border-color: #bdcaba; color: #41583f; }
+    .form-text, .valid-feedback, .invalid-feedback { font-size: 12px; }
     textarea { resize: vertical; }
-    .form-label, .form-check-label { color: #253047; }
-    legend { font-size: 16px; font-weight: bold; }
+    legend { font-size: 13px; font-weight: bold; }
+    footer { padding-top: 18px; border-top: 1px solid #d8ded3; color: #647268; font-size: 12px; }
+    @media (max-width: 767px) {
+      .page { padding: 20px 14px; }
+      .basic-grid { grid-template-columns: 1fr; gap: 0; }
+      .intro { display: block; padding: 32px 0 24px; }
+      h1 { font-size: 43px; }
+      .intro p { margin-top: 20px; max-width: 100%; }
+      section { padding: 22px; }
+      .brand, footer { flex-wrap: wrap; gap: 10px; }
+    }
   </style>
 </head>
 <body>
 <main class="page container">
   <header>
-    <h1>Forms and Validation</h1>
-    <p>Assignment 4 · Assem Tugelbay · SE-2540</p>
+    <div class="brand"><strong>the student club.</strong><span class="badge-label">ASSIGNMENT 04</span></div>
+    <div class="intro">
+      <h1>A little hello.<br><em>A new connection.</em></h1>
+      <p>Share an idea, ask a question, or find your people. It all starts here.</p>
+    </div>
     <nav aria-label="Assignment tasks">
-      <a href="#task-0">Task 0</a>
-      <a href="#task-1">Task 1</a>
-      <a href="#task-2">Task 2</a>
-      <a href="#task-3">Task 3</a>
-      <a href="#task-4">Task 4</a>
+      <a href="#task-0">00 · Contact</a>
+      <a href="#task-1">01 · Validation</a>
+      <a href="#task-2">02 · Bootstrap</a>
+      <a href="#task-3">03 · Feedback</a>
+      <a href="#task-4">04 · Join the club</a>
     </nav>
   </header>
+  <div class="basic-grid">
   <section id="task-0">
-    <h2>Task 0. Simple contact form</h2>
+    <p class="section-label">PART 01 / TASK 0</p>
+    <h2>Start a conversation.</h2>
+    <p class="note">A simple contact form. We would love to hear from you.</p>
     <form class="basic" action="#task-0" method="get">
       <p><label for="basic-name">Name</label><input id="basic-name" name="name" type="text"></p>
       <p><label for="basic-email">Email</label><input id="basic-email" name="email" type="email"></p>
@@ -48,8 +79,9 @@
     </form>
   </section>
   <section id="task-1">
-    <h2>Task 1. HTML5 validation</h2>
-    <p>All fields are required. Name: 2–30 characters. Message: 10–500 characters.</p>
+    <p class="section-label">PART 01 / TASK 1</p>
+    <h2>A few little details.</h2>
+    <p class="note">All fields required. Name: 2–30 characters. Message: 10–500.</p>
     <form class="basic" action="#task-1" method="get">
       <p><label for="html-name">Name</label><input id="html-name" name="name" type="text" minlength="2" maxlength="30" required></p>
       <p><label for="html-email">Email</label><input id="html-email" name="email" type="email" required></p>
@@ -57,8 +89,11 @@
       <button type="submit">Submit</button>
     </form>
   </section>
+  </div>
   <section id="task-2">
-    <h2>Tasks 2–3. Styling and validation</h2>
+    <p class="section-label">PART 02 / TASKS 2–3</p>
+    <h2>Your message, nicely arranged.</h2>
+    <p class="note">A Bootstrap contact form with feedback. All fields are required.</p>
     <form class="row g-3 was-validated" action="#task-2" method="get">
       <div class="col-md-6">
         <label for="contact-name" class="form-label">Name</label>
@@ -83,8 +118,9 @@
     </form>
   </section>
   <section id="task-3">
-    <h2>Task 3. Validation class examples</h2>
-    <p>Fixed examples of <code>is-valid</code> and <code>is-invalid</code>. Test changing values in the contact form above.</p>
+    <p class="section-label">PART 02 / TASK 3</p>
+    <h2>A clear sign along the way.</h2>
+    <p class="note">Fixed <code>is-valid</code> and <code>is-invalid</code> examples. Try your own values in the form above.</p>
     <div class="row g-3">
       <div class="col-md-6">
         <label for="valid-example" class="form-label">Valid example</label>
@@ -99,8 +135,9 @@
     </div>
   </section>
   <section id="task-4">
-    <h2>Task 4. Registration form</h2>
-    <p>All fields except hobbies are required. This is a practice form; use sample details.</p>
+    <p class="section-label">PART 03 / TASK 4 · REGISTRATION</p>
+    <h2>Find your people.</h2>
+    <p class="note">Join the student club. All fields except hobbies are required. Use sample details for this practice form.</p>
     <form class="row g-3 was-validated" action="#task-4" method="get">
       <div class="col-md-6">
         <label for="first-name" class="form-label">First name</label>
@@ -182,7 +219,7 @@
       </div>
     </form>
   </section>
-  <footer>Assem Tugelbay · SE-2540 · Forms and Validation</footer>
+  <footer><span>Assem Tugelbay · SE-2540</span><span>Forms &amp; Validation · Assignment 4</span></footer>
 </main>
 </body>
 </html>
